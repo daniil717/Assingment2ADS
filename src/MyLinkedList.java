@@ -1,51 +1,43 @@
 import java.util.Iterator;
 
-public class MyArrayList<T> implements MyList {
-    private Object[] arr;
-    private int size;
-
-    public MyArrayList(){
-        arr = new Object[10];
-        size = 0;
-    }
-
+public class MyLinkedList<T> implements MyList<T> {
     @Override
-    public void add(Object item) {
+    public void add(T item) {
 
     }
 
     @Override
-    public void set(int index, Object item) {
+    public void set(int index, T item) {
 
     }
 
     @Override
-    public void add(int index, Object item) {
+    public void add(int index, T item) {
 
     }
 
     @Override
-    public void addFirst(Object item) {
+    public void addFirst(T item) {
 
     }
 
     @Override
-    public void addLast(Object item) {
+    public void addLast(T item) {
 
     }
 
     @Override
-    public Object get(int index) {
+    public T get(int index) {
         return null;
     }
 
     @Override
-    public Object getFirst() {
+    public T getFirst() {
         return null;
     }
 
     @Override
-    public Object getLast() {
+    public T getLast() {
         return null;
     }
 
@@ -100,7 +92,7 @@ public class MyArrayList<T> implements MyList {
     }
 
     @Override
-    public Iterator iterator() {
+    public Iterator<T> iterator() {
         return null;
     }
 }
