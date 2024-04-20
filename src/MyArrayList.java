@@ -4,6 +4,11 @@ public class MyArrayList<T> implements MyList {
     private Object[] arr;
     private int size;
 
+    private  void checkIndex(int index){
+        if(index < 0 || index >= size)
+            throw new IndexOutOfBoundsException("incorrect");
+    }
+
     public MyArrayList(){
         arr = new Object[10];
         size = 0;
