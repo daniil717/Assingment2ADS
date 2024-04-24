@@ -63,17 +63,18 @@ the new element and the array size is increased by 1 */
 
     @Override
     public T get(int index) {
-        return null;
+        checkIndex(index);
+        return (T) arr[index];
     }
 
     @Override
     public T getFirst() {
-        return null;
+        return get(0);
     }
 
     @Override
     public T getLast() {
-        return null;
+        return get(size - 1);
     }
 
     @Override
