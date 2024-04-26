@@ -36,7 +36,16 @@ public class Main {
     }
 
     private static void testMyQueue() {
+        MyQueue<Integer> queue = new MyQueue<>();
+        for (int i = 0; i < 10; i++) {
+            queue.enqueue(i);
+        }
 
+        System.out.print("Queue: ");
+        while (!queue.isEmpty()) {
+            System.out.print(queue.dequeue() + " ");
+        }
+        System.out.println();
     }
 
     public static void testLists() {
