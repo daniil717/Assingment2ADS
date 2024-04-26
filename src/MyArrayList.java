@@ -26,7 +26,6 @@ and also transfer all old elements to the new array */
             arr = newArr;
         }
         arr[size++] = item;
-
     }
 
 /*add a new element value at the current index and increase the array size by 1 */
