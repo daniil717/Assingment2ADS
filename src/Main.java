@@ -1,7 +1,35 @@
 public class Main {
+
     public static void main(String[] args) {
+        testMyStack();
+        testMyQueue();
+        testMyMinHeap();
+        testLists();
+    }
+
+    private static void testMyMinHeap() {
+    }
+
+    private static void testMyStack() {
+        MyStack<String> stack = new MyStack<>();
+        for (int i = 0; i < 10; i++) {
+            stack.push("" + i);
+        }
+
+        System.out.print("Stack: ");
+        while (!stack.isEmpty()) {
+            System.out.print(stack.pop() + " ");
+        }
+        System.out.println();
+    }
+
+    private static void testMyQueue() {
+
+    }
+
+    public static void testLists() {
         // Testing MyArrayList
-        System.out.println("Testing MyArrayList:");
+        System.out.println("\nTesting MyArrayList:");
         MyList<Integer> arrayList = new MyArrayList<>();
         arrayList.add(1);
         arrayList.add(2);
