@@ -8,6 +8,18 @@ public class Main {
     }
 
     private static void testMyMinHeap() {
+        MyMinHeap<Integer> minHeap = new MyMinHeap<>();
+        minHeap.insert(5);
+        minHeap.insert(10);
+        minHeap.insert(3);
+        minHeap.insert(8);
+        minHeap.insert(1);
+
+        System.out.print("Min Heap: ");
+        while (!minHeap.isEmpty()) {
+            System.out.print(minHeap.deleteMin() + " ");
+        }
+        System.out.println();
     }
 
     private static void testMyStack() {
